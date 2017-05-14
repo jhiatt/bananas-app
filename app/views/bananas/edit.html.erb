@@ -1,0 +1,10 @@
+Edit banana
+
+<%= form_tag "/bananas/#{@banana.id}", method: :patch do %>
+  Price: <input type="text" value="<%= @banana.price %>" name="price">
+  Color: <input type="text" value="<%= @banana.color %>" name="color">
+  Is this a plantain <input type="text" value="<%= @banana.actually_plantain %>" name="actually_plantain">
+  <p><input type="submit" value ="edit!"></p>
+<% end %>
+
+<%= link_to "Destroy!!", "/bananas/#{@banana.id}", method: :delete %>

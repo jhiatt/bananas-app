@@ -1,0 +1,9 @@
+<h1>See our Bananas!</h1>
+
+<div>
+  <p><% @bananas.each do |banana| %></p>
+    <p>Price: <%=  banana.price%></p>
+    <p>Color: <%=  banana.color%></p>
+    <p>Is this really a Plantain? <%=  banana.actually_plantain%></p>
+<% end %>
+</div>

@@ -1,0 +1,8 @@
+<h1>New Banana!</h1>
+
+<%= form_tag "/bananas", method: :post do %>
+  Price: <input type="text" name="price">
+  Color: <input type="text" name="color">
+  Is this a plantain <input type="text" name="actually_plantain">
+  <p><input type="submit" value="create!"></p>
+<% end %>
